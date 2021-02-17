@@ -1,0 +1,14 @@
+<h3>Top Restaurants are here!</h3>
+
+<ul>
+
+  <% @restaurants.each do |restaurant| %>
+    <li>
+      <%= restaurant.name %> |
+      <%= restaurant.address %>
+    </li>
+  <% end %>
+
+</ul>
+
+<%= link_to "Go Back", restaurants_path %>

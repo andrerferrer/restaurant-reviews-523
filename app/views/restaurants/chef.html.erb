@@ -1,0 +1,11 @@
+<div class="container">
+  <h2>Welcome to the <%= @restaurant.name %></h2>
+  <p>
+    Our amazing chef is <%= @chef_name %>
+    and we have 3 Michelin Stars 💖💖💖
+  </p>
+
+  <%# link_to "Back", restaurant_path %>
+  <%= link_to "Back", restaurant_path(@restaurant.id) %>
+
+</div>

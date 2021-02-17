@@ -1,0 +1,10 @@
+<%# simple_form_for [@parent, @child] do |f| %>
+<%= simple_form_for [@restaurant, @review] do |f| %>
+  <%= f.input :content %>
+  <%= f.submit "Create a Review", class: 'btn btn-primary' %>
+<% end %>
+
+<%# 
+  <form method='POST' action="/reviews"></form>
+  reviews_path 
+%>
